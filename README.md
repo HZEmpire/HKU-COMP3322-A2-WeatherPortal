@@ -16,10 +16,9 @@ This project is a weather portal that provides various functionalities related t
 
 <div align="center">
     <div align="center">
-        <img src="/images/SamplePC.png" alt="Sample Image" width="50%" height="50%" />
+        <img src="/images/SamplePC.png" alt="Sample Image"/>
         <p>PC interface</p>
     </div>
-
     <div align="center">
         <img src="/images/SampleMobile.png" alt="Sample Image" width="50%" height="50%" />
         <p>Mobile</p>
