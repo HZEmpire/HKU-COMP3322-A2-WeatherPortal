@@ -14,8 +14,8 @@ This project is a weather portal that provides various functionalities related t
 
 ## Sample Image
 
-![Sample Image](./images/samplePC.png)
-![Sample Image](./images/sampleMobile.png)
+![Sample Image](/images/SamplePC.png)
+![Sample Image](/images/SampleMobile.png)
 
 The sample image is stored in the "./images/" directory.
 
