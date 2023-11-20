@@ -1,0 +1,294 @@
+header h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* Cool Title */
+@supports ((background: linear-gradient(to right, red, yellow)) or (-webkit-background-clip: text and -webkit-text-fill-color: transparent)) {
+    h1 {
+        background: linear-gradient(to right, rgb(16, 199, 184), rgb(0, 51, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+body {
+    background-color: rgb(253, 244, 244);
+    width: 80%;
+    min-height: 100vh;
+    min-width: 600px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url(https://bingw.jasonzeng.dev/?index=random);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* General settings for container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1rem;
+}
+.container > div:nth-child(1),
+.container > div:nth-child(2) {
+    grid-row: 1;
+    /* specify each occupies 3 columns */
+    grid-column: span 3;
+}
+.container > div:nth-child(3),
+.container > div:nth-child(4),
+.container > div:nth-child(5) {
+    grid-row: 2;
+    /* specify each occupies 2 columns */
+    grid-column: span 2;
+}
+.container > div:nth-child(6) {
+    grid-row: 3;
+    /* specify each occupies 6 columns */
+    grid-column: span 6;
+} 
+
+.container > div {
+    border-radius: 5px;
+    border: transparent;
+    box-shadow: 3px 3px 1px  grey;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.container > div {
+    position: relative;
+}
+
+.container > div > div:first-child{
+    margin-left: 3%;
+}
+
+select{
+    margin: 3%;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 80%;
+    height: 30px;
+    font-size: 1rem;
+}
+
+/* Settings for First block */
+#h_icon {
+    display: flex;
+    justify-content: center;
+}
+
+#h_icon img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#h_warning {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(243, 77, 77, 0.875);
+    border: transparent;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+#warning_b{
+    font: 1rem;
+    font-weight: bold;
+    padding: 3px 10px;
+}
+
+#warmsg{
+    width: 100%;
+    word-break: break-word;
+    padding-right: 30px;
+}
+
+#h_lastupdate {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+}
+
+#home .content {
+    margin-top: 30px;
+    margin-bottom: 60px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.content > div {
+    flex: 1 0 110px; /* set the width */
+    max-width: 50%; 
+    justify-content: center;
+}
+  
+.combine {
+    display: flex;
+    align-self: center;
+}
+  
+.combine > div:first-child {
+    font-size: 2.5rem;
+}
+  
+.combine sup {
+    align-self: flex-start; /* right up */
+    font-size: 1.5rem;
+}
+
+.combine sup img {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.combine > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* align to bottom */
+}
+
+/* Settings for Second block */
+#myloc{
+    background-color: hwb(160 85% 2% / 80%);
+}
+
+#myloc .content {
+    margin-top: 15px;
+    margin-bottom: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#m_AQI_risk img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* Settings for Third block */
+#temp{
+    background-color: rgba(210, 248, 248, 0.8);
+}
+
+#temp .combine{
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#temp h3{
+    padding-left: 3%;
+}
+
+/* Settings for Fourth block */
+#rain{
+    background-color: rgba(255, 255, 204, 0.8);
+}
+
+#rain .combine{
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#rain h3{
+    padding-left: 3%;
+}
+
+/* Settings for Fifth block */
+#air{
+    background-color: rgba(227, 227, 227, 0.8);
+}
+
+#a_out{
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#a_outval{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#air h3{
+    padding-left: 3%;
+}
+
+
+/* Settings for Sixth block */
+#nine{
+    background-color: rgba(236, 219, 238, 0.8);
+    margin-bottom: 15px;
+}
+
+#n_forcast{
+    padding: 10px 0 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+}
+
+.one_day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 0.8em sans-serif;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+
+.one_day img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    /* For mobile phones: */
+    body{
+        /* Set width to 100% of screen */
+        min-width: 0;
+        width: 95%;
+        overflow: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container > div {
+        grid-column: span 1;
+        width: 100%;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    /* Hide the required content when needed */
+    #hide_temp, #hide_rain, #hide_air{
+        display: none;
+    }
+}
