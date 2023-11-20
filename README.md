@@ -12,10 +12,17 @@ This project is a weather portal that provides various functionalities related t
 5. Get air quality information for the selected monitoring station.
 6. Get weather information for the next 9 days in Hong Kong.
 
-## Sample Image
+## User Interface
 
-![Sample Image](/images/SamplePC.png)
-![Sample Image](/images/SampleMobile.png)
+<div align="center">
+    <img src="/images/SamplePC.png" alt="Sample Image" />
+    <p>PC interface</p>
+</div>
+
+<div align="center">
+    <img src="/images/SampleMobile.png" alt="Sample Image" />
+    <p>Mobile</p>
+</div>
 
 The sample image is stored in the "./images/" directory.
 
