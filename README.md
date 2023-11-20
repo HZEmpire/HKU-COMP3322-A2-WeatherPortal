@@ -15,13 +15,15 @@ This project is a weather portal that provides various functionalities related t
 ## User Interface
 
 <div align="center">
-    <img src="/images/SamplePC.png" alt="Sample Image" />
-    <p>PC interface</p>
-</div>
+    <div align="center">
+        <img src="/images/SamplePC.png" alt="Sample Image" width="50%" height="50%" />
+        <p>PC interface</p>
+    </div>
 
-<div align="center">
-    <img src="/images/SampleMobile.png" alt="Sample Image" />
-    <p>Mobile</p>
+    <div align="center">
+        <img src="/images/SampleMobile.png" alt="Sample Image" width="50%" height="50%" />
+        <p>Mobile</p>
+    </div>
 </div>
 
 The sample image is stored in the "./images/" directory.
